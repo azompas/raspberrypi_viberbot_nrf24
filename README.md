@@ -17,7 +17,7 @@ To install the library on raspberry pi and be able to use the python examples, t
   (for each library the *setup.py* file is under *pyRF24* or *pyRF24Network* directory respectively)
  
 ## Running the code
-To run the code on the arduino, simply upload the sketch to the microcontroller.__
+To run the code on the arduino, simply upload the sketch to the microcontroller.<br />
 To run the code on raspberry pi, you have to run it with **sudo**
   
 ## Usefull links
