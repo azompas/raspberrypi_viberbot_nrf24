@@ -17,6 +17,7 @@ import yaml
 from sys import path
 path.append('/home/anastasis/code/raspberrypi_viberbot_nrf24')
 from utils.database import yamlDatabase
+from utils.menu import homeSensorMenu
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
@@ -52,6 +53,8 @@ def incoming():
 
 	viber_request = viber.parse_request(request.get_data())
 	db = yamlDatabase()
+	hm = homeSensorMenu()
+	hm.help_function()
 
 	if isinstance(viber_request, ViberMessageRequest):
 		#~ message = viber_request.message
